@@ -12,5 +12,9 @@
 	},
 	"commandPrefix": "!",
 	"reportErrorsToUser": "",
-	"disableReactionsAtCapIn": []
+	"disableReactionsAtCapIn": [],
+	"cleverbot": {
+		"user": "14nEAhxbEP46ePS2",
+		"key" : "z3UfXJcU6GV5Unr4Nue937CKYbENQIVn"
+	}
 }

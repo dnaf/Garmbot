@@ -134,6 +134,15 @@ class Garmbot extends Discord.Client {
 			
 			return message.channel.sendEmbed(embed, message.author.toString()).then(() => {if (message.deletable) message.delete(2000)});
 		}
+		else if (message.isMentioned(this.user.id)) {
+			let commands = await this.commands;
+			let content = message.content.replace(/<.*> /g, "");
+			for (let i = 0; i < commands.length; i++) {
+				if (commands[i].aliases.indexOf("csend") > -1) {
+					return commands[i].function(message);
+				}
+			}
+		}
 	}
 
 	loadPlugins() {

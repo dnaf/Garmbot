@@ -1,2 +1,4 @@
 node_modules
 *.log
+rethinkdb_data/
+config/local.json
